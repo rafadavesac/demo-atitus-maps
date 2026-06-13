@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://two025-01-apisample.onrender.com/ws/point';
+const BASE_URL = 'https://two025-01-apisample.onrender.com/ws/point'; //TODO: colocar minha propria api construida em java
 
 export async function getPoints(token) {
   try {
