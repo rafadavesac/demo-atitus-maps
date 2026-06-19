@@ -1,9 +1,11 @@
-import "./logo.css";
+import logo from "./LogoMedHome.png";
 
 export const Logo = () => {
   return (
-    <div className="logo">
-      <div className="text-wrapper">Logotipo</div>
-    </div>
+    <img
+      src={logo}
+      alt="MedHome"
+      style={{ width: "420px", maxWidth: "100%" }}
+    />
   );
 };

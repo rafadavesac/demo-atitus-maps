@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://two025-01-apisample.onrender.com/auth';  //TODO: colocar minha propria api construida em java
+const API_URL = 'http://localhost:8080/auth';  //TODO: colocar minha propria api construida em java
 
 export async function signIn(email, password) {
   try {
@@ -21,7 +21,12 @@ export async function signIn(email, password) {
 
 export async function signUp(name, email, password) {
   try {
-    const response = await axios.post(`${API_URL}/signup`, { name, email, password });
+    const response = await axios.post(`${API_URL}/signup`, { 
+      name, 
+      email, 
+      password,
+      type: "Common"
+    });
     return response.data;
   } catch (error) {
     if (error.response) {
