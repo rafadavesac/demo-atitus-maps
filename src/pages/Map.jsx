@@ -154,7 +154,7 @@ export const Map = () => {
               </label>
               <input
                 style={{ width: "100%", backgroundColor: "rgba(255,255,255,0.25)", border: "none", borderRadius: "30px", padding: "12px 20px", color: "#fff", fontSize: "14px", outline: "none" }}
-                placeholder="Ex: Enfermagem, Fisioterapia..."
+                placeholder="Ex: Fisioterapia, Troca de Curativos..."
                 value={serviceType}
                 onChange={(e) => setServiceType(e.target.value)}
               />
