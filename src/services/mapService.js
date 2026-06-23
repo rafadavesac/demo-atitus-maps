@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://api-sample-medhome-1r84.onrender.com/ws/point';
+const BASE_URL = 'https://api-sample-medhome-1r84.onrender.com';
 
 export async function getPoints(token) {
   try {
