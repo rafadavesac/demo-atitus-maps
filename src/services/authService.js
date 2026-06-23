@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://api-sample-medhome-1r84.onrender.com' //TODO: colocar minha propria api construida em java
+const API_URL = 'https://api-sample-medhome-1r84.onrender.com/auth' //TODO: colocar minha propria api construida em java
 
 export async function signIn(email, password) {
   try {
